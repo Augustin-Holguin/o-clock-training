@@ -1,6 +1,6 @@
 const app = {
-    nbPixel: 8,
-    pxSize: 2,
+    nbPixel: undefined,
+    pxSize: undefined,
     pxColor: {
         one: '#D2DAE2',
         two: '#485460',
@@ -10,21 +10,37 @@ const app = {
     choosenColor: undefined
     ,
     init: () => {
-        app.createBoard();
         app.colorizer();
+        app.formClick();
     },
-    createBoard: () => {
-        const main = document.querySelector('.board');  
+    formClick: () => {
+        const button = document.querySelector('button');
+        button.addEventListener('click', (evt) => {
+            app.playerInputs();
+        })
+    },
+    playerInputs: () => {
+        const form = document.querySelector('.form');
+        form.addEventListener('submit', (evt) => {
+            evt.preventDefault();
+            app.nbPixel  = evt.target[0].value;
+            app.pxSize = evt.target[1].value;
+            app.createBoard(app.nbPixel, app.pxSize);            
+        })        
+    },
+    createBoard: (nbPixel, pxSize) => {
+        const main = document.querySelector('.board');
+        main.innerHTML = '';  
 
-        for (let i = 0; i < app.nbPixel; i++) {
+        for (let i = 0; i < nbPixel; i++) {
             const row = document.createElement('div');
             row.className = 'row';
             
-            for (let j = 0; j < app.nbPixel; j++) {
+            for (let j = 0; j < nbPixel; j++) {
                 const pixel = document.createElement('div');
                 pixel.className = 'pixel';
-                pixel.style.height = app.pxSize + 'em';
-                pixel.style.width = app.pxSize + 'em';
+                pixel.style.height = pxSize + 'em';
+                pixel.style.width = pxSize + 'em';
                 row.appendChild(pixel);
                 pixel.addEventListener('click', app.handleClick);
             }
@@ -39,15 +55,15 @@ const app = {
     colorizer: () => {
         const colors = document.getElementsByClassName('colors');
         colors[0].addEventListener('click', (evt) => {
-             if (evt.target.className === 'colors__color color-1') {
-                 app.choosenColor = app.pxColor.one;
-             } else if (evt.target.className === 'colors__color color-2') {
-                app.choosenColor = app.pxColor.two;
-             } else if (evt.target.className === 'colors__color color-3') {
-                app.choosenColor = app.pxColor.three;
-             } else {
-                app.choosenColor = app.pxColor.four;
-             }
+            if (evt.target.className === 'colors__color color-1') {
+            app.choosenColor = app.pxColor.one;
+            } else if (evt.target.className === 'colors__color color-2') {
+            app.choosenColor = app.pxColor.two;
+            } else if (evt.target.className === 'colors__color color-3') {
+            app.choosenColor = app.pxColor.three;
+            } else {
+            app.choosenColor = app.pxColor.four;
+            }
         })
     }
 }
