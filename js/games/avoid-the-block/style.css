@@ -44,7 +44,7 @@ body {
 	top: 160px; 
 	z-index: 1;
 	left: calc(600px - 143.2px);
-	animation: sliding 1.8s infinite linear;
+	/* animation: sliding 1.8s infinite linear; */
 }
 
 #t-rex img {
