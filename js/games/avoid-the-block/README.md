@@ -3,4 +3,4 @@
 Inspired by this repo -> https://github.com/Beat0154/easiest-game-ever
 
 ### v1 output
-![Alt text](./images/readme.png)
+![Alt text](./images/readme.PNG)
