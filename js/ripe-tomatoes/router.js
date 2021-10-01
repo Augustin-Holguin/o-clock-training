@@ -2,7 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index');
+    const movies = req.app.locals.movies;
+    let variousGenre = [];
+
+    for (const movie of movies) {
+        variousGenre.push(movie.genre);
+    }
+    // filter unique alphabetically sorted values with Set constructor and spread operator
+    const uniqueGenre = [...new Set(variousGenre.sort())];
+
+    res.render('index', { uniqueGenre });
 });
 
 router.get('/search', (req, res, next) => {
@@ -28,7 +37,7 @@ router.get('/genre/:genre', (req, res) => {
         }
     });
 
-    res.render('genre', { sameGenreMovies });
+    res.render('genre', { sameGenreMovies, genre });
 })
 
 module.exports = router;
