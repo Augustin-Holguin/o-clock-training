@@ -17,12 +17,25 @@
 </div>
 
 <main class="main-home">
-    <div class="cine-carousel">
-        In theater movies caroussel
-    </div>
-    <div class="cine-soon">
-        Soon in theater
-    </div>
+    <section class="main-home__new">
+        <h3 class="main-h3">In theater</h3>
+        <div class="cine-carousel">
+            
+        </div>
+
+        <h3 class="main-h3">New and upcoming movies</h3>
+        <div class="cine-soon">
+            <span class="car car-left">&#139</span>
+                <% for (const movie of movies) { %>
+                    <% if (!movie.released) { %>
+                        <div class="cine-soon__movie">
+                            <a href=""><img class="cine-soon__movie__img" src="<%= movie.cover %>"></a>
+                        </div>
+                    <% } %>
+                <% } %>
+            <span class="car car-right">&#155</span>
+        </div>
+    </section>
 </main>
 
 <%- include('./partials/sections/footer') %> 

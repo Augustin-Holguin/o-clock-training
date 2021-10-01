@@ -1,8 +1,14 @@
+body {
+    background: #F4F5F6;
+}
+
 #container {
     display: flex;
     flex-flow: column wrap;
     font-family: 'Mukta', sans-serif;
-    background: #F4F5F6;
+    background: white;
+    max-width: 1100px;
+    margin: auto;
 }
 
 a {
@@ -17,7 +23,6 @@ a {
     justify-content: center;
     background: #FA320A;
     height: 5em;
-    margin-left: -38px;
 }
 
 .header a h1 {
@@ -84,6 +89,9 @@ a {
     display: flex;
     align-items: center;
 }
+.a-link {
+    color: #3984e7;
+}
 
 /* main homepage */
 .main-home {
@@ -93,23 +101,86 @@ a {
     align-items: center;
 }
 
+/* main elements */
+.main-h3 {
+    color: #961E06;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
 /* main page in theater caroussel */
-.cine-carousel {
+.main-home__new {
     width: 90%;
+}
+
+.cine-carousel { 
     height: 25em;
     background: white;
     margin: 1em 0;
+    border: 1px solid rgb(160, 160, 160, 0.3);
+}
+
+/* carrousel */
+.car {
+    position: absolute;
+    background: #E9E9E9;
+    margin-top: 3.5em;
+    font-size: 2.5em;
+    width: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.car:hover {
+    background: #d3d3d3;
+}
+
+.car-left {
+    left: 0;
+}
+
+.car-right {
+    right: 0;
 }
 
 /* main page soon in theater */
 .cine-soon {
-    width: 90%;
-    height: 15em;
-    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 20em;
+    /* background: #5c5c5c; */
     margin: 1em 0;
+    /* border: 1px solid rgb(160, 160, 160, 0.3); */
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+}
+
+.cine-soon__movie {
+    min-width: 25%;
+}
+
+.cine-soon__movie__img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.cine-soon__movie__img:hover {
+    opacity: 0.5;
 }
 
 /* searchResult view */
+.search-title {
+    margin: 1em 0 0 1em;
+    font-size: 2em;
+}
+
 .movie-list {
     margin: 1em;
     display: flex;
@@ -126,7 +197,7 @@ a {
 }
 
 .movie {
-    background:white;
+    background:#F4F5F6;
     margin: 1em;
     display: flex;
     height: 15em;

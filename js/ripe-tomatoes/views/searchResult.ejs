@@ -1,5 +1,7 @@
 <%- include('./partials/sections/header') %> 
 
+<h3 class="search-title">Result for "<%= searchQuery %>"</h3>
+
 <div class="movie-list">
     <% for(movie of searchMatch) { %>
         <%- include('./partials/view-sections/movie-classic') %> 

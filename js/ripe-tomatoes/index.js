@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/public'));
 
-app.locals.movies = require('./movies.json');
+app.locals.movies = require('./data/movies.json');
 
 app.use((req, res, next) => {
     console.log(`URL request -> ' ${req.path} '`);

@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     // filter unique alphabetically sorted values with Set constructor and spread operator
     const uniqueGenre = [...new Set(variousGenre.sort())];
 
-    res.render('index', { uniqueGenre });
+    res.render('index', { movies, uniqueGenre });
 });
 
 router.get('/search', (req, res, next) => {
@@ -24,7 +24,7 @@ router.get('/search', (req, res, next) => {
         }
     });
 
-    res.render('searchResult', { searchMatch });
+    res.render('searchResult', { searchMatch, searchQuery });
 })
 
 router.get('/genre/:genre', (req, res) => {

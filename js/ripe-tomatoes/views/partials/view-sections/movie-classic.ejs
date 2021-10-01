@@ -3,12 +3,12 @@
     <div class="movie__info">
         <h3 class="movie__info__title"><%= movie.title %></h3>
         <div>
-            <p class="movie__info__meta">Genre: <a href="/genre/<%= movie.genre %>"><%= movie.genre %></a></p>
+            <p class="movie__info__meta">Genre: <a class="a-link" href="/genre/<%= movie.genre %>"><%= movie.genre %></a></p>
             <p class="movie__info__meta">Director: <%= movie.director %></a></p>
             <p class="movie__info__meta">Year: <%= movie.year %></a></p>
         </div>
         <div class="movie__info__syn">
-            <%= movie.synopsis.split(" ").slice(0, 30).join(" ") %><span> ... <a href="">Read more</a></span>
+            <%= movie.synopsis.split(" ").slice(0, 30).join(" ") %><span> ... <a href="" class="a-link">Read more</a></span>
         </div>
     </div>
 </div>

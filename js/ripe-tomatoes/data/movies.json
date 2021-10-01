@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "No Country For Old Men",
+        "released": true,
         "year": "2007",
         "genre": "thriller",
         "director": "Coen brothers",
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "title": "Interstellar",
+        "released": true,
         "year": "2014",
         "genre": "sci-fi",
         "director": "Christopher Nolan",
@@ -20,6 +22,7 @@
     {
         "id": 3,
         "title": "Pulp Fiction",
+        "released": true,
         "year": "1994",
         "genre": "thriller",
         "director": "Quentin Tarantino" ,
@@ -29,6 +32,7 @@
     {
         "id": 4,
         "title": "Shutter Island",
+        "released": true,
         "year": "2010",
         "genre": "thriller",
         "director": "Martin Scorsese",
@@ -38,6 +42,7 @@
     {
         "id": 5,
         "title": "Prisoners",
+        "released": true,
         "year": "2013",
         "genre": "thriller",
         "director": "Denis Villeneuve",
@@ -47,6 +52,7 @@
     {
         "id": 6,
         "title": "Titane",
+        "released": true,
         "year": "2021",
         "genre": "thriller",
         "director": "Julia Ducournau",
@@ -56,6 +62,7 @@
     {
         "id": 7,
         "title": "Les misérables",
+        "released": true,
         "year": "2019",
         "genre": "drama",
         "director": "Ladj Ly",
@@ -65,6 +72,7 @@
     {
         "id": 8,
         "title": "Inception",
+        "released": true,
         "year": "2010",
         "genre": "action",
         "director": "Christopher Nolan",
@@ -74,6 +82,7 @@
     {
         "id": 9,
         "title": "The Wailing",
+        "released": true,
         "year": "2016",
         "genre": "horror",
         "director": "Na Hong-Jin",
@@ -83,6 +92,7 @@
     {
         "id": 10,
         "title": "Une vie violente",
+        "released": true,
         "year": "2017",
         "genre": "thriller",
         "director": "Thierry de Peretti",
@@ -92,6 +102,7 @@
     {
         "id": 11,
         "title": "Midnight Express",
+        "released": true,
         "year": "1978",
         "genre": "drama",
         "director": "Alan Parker",
@@ -101,6 +112,7 @@
     {
         "id": 12,
         "title": "Drunk",
+        "released": true,
         "year": "2020",
         "genre": "drama",
         "director": "Thomas Vinterberg",
@@ -110,10 +122,71 @@
     {
         "id": 13,
         "title": "50/50",
+        "released": true,
         "year": "2011",
         "genre": "drama",
         "director": "Jonathan Levine",
         "synopsis": "Adam Lerner (Joseph Gordon-Levitt) has always tried to take good care of his health, so it comes as a cruel surprise when he learns that he has malignant tumors along his spine. His doctor gives him a 50/50 chance of survival, but Adam tries to remain upbeat, though his mother (Anjelica Huston) and his friend Kyle (Seth Rogen), react badly to the news. Adam starts seeing a therapist (Anna Kendrick), but their relationship threatens to cross the boundary between doctor and patient.",
         "cover": "https://resizing.flixster.com/inho9g2D7c2mbBGqTtjmT1_hUK4=/206x305/v2/https://flxt.tmsimg.com/assets/p8559465_p_v10_aa.jpg" 
+    },
+    {
+        "id": 14,
+        "title": "Dunkirk",
+        "released": true,
+        "year": "2017",
+        "genre": "war",
+        "director": "Christopher Nolan",
+        "synopsis": "In May 1940, Germany advanced into France, trapping Allied troops on the beaches of Dunkirk. Under air and ground cover from British and French forces, troops were slowly and methodically evacuated from the beach using every serviceable naval and civilian vessel that could be found. At the end of this heroic mission, 330,000 French, British, Belgian and Dutch soldiers were safely evacuated.",
+        "cover": "https://resizing.flixster.com/-O33A0udc47to3YGKWRd_NQ28Qk=/206x305/v2/https://resizing.flixster.com/EELTBoC1bnQ2xZ-Sfbja5hKvvg8=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzYxYjZlMDAwLWQxZTctNDYyNS04YTRlLTc5YjcxY2VmYmFlZC53ZWJw" 
+    },
+    {
+        "id": 15,
+        "title": "No Time To Die",
+        "released": false,
+        "year": "2021",
+        "genre": "action",
+        "director": "Cary Joji Fukunaga",
+        "synopsis": "In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+        "cover": "https://resizing.flixster.com/dvrBlvusKyzJWd3_0xPYl-cYAoA=/206x305/v2/https://resizing.flixster.com/iq-lPVWed-w4chclXfxu0sacIwc=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzFkNTZlZTE1LTRiYjMtNDA3MC1iMGE3LTdhOWZmOGNlZWJjOS5qcGc=" 
+    },
+    {
+        "id": 16,
+        "title": "Dune",
+        "released": false,
+        "year": "2021",
+        "genre": "sci-fi",
+        "director": "Denis Villeneuve",
+        "synopsis": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence, only those who can conquer their own fear will survive.",
+        "cover": "https://resizing.flixster.com/l_Vw-O0ZRNSSHBtye6MXe471Yks=/206x305/v2/https://resizing.flixster.com/4amRuM3jqSEr3GiFgBHrFPSHxM4=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzdhYTI2NDJkLTU5YTYtNDNkOS05ZWQxLWZiNjFlOTZmYjZlZS5qcGc=" 
+    },
+    {
+        "id": 17,
+        "title": "Bac Nord",
+        "released": false,
+        "year": "2021",
+        "genre": "thriller",
+        "director": "Cédric Jimenez",
+        "synopsis": "Tired of the small-time grind, three Marseille cops get a chance to bust a major drug network. However, lines blur when a key informant makes a big ask.",
+        "cover": "https://resizing.flixster.com/fxSzw9zAAC7lzNBzr4v2F7i1frg=/206x305/v2/https://resizing.flixster.com/CZ9tGX0UJjae25zVcmHKxy_5Ae0=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzkwNjIxN2FkLWJjZGEtNDVjNS1iNjJlLTc3ZDI3NGEyMWU0Ni5qcGc=" 
+    },
+    {
+        "id": 17,
+        "title": "Stillwater",
+        "released": false,
+        "year": "2021",
+        "genre": "thriller",
+        "director": "Tom McCarthy",
+        "synopsis": "Unemployed roughneck Bill Baker (Academy Award® winner Matt Damon) travels from Oklahoma to Marseille to visit his estranged daughter Allison (Academy Award® nominee Abigail Breslin). Imprisoned for a murder she claims she did not commit. Allison seizes on a new tip that could exonerate her and presses Bill to engage her legal team But Bill eager to prove his worth and regain his daughters trust, takes matters into his own hands. He is quickly stymied by language barriers, cultural differences, and a complicated legal system until he meets French actress Virginie (Camille Cottin), mother to eight-year-old Maya (Lilou Siauvaud). Together, these unlikely allies embark on a journey of discovery, truth, love and liberation.",
+        "cover": "https://resizing.flixster.com/Jgj9Ob46Sa8-bts9TO4LwFx40-I=/206x305/v2/https://resizing.flixster.com/hGiQY2mve-aS3u-7-qqta1_EQbA=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzExNDc1NTVlLTFkZDItNGEwOC1iYzI0LWJmNjI3MGYyMGJhOS5qcGc=" 
+    },
+    {
+        "id": 18,
+        "title": "The French Dispatch",
+        "released": false,
+        "year": "2021",
+        "genre": "drama",
+        "director": "Wes Anderson",
+        "synopsis": "A love letter to journalists set in an outpost of an American newspaper in a fictional 20th-century French city that brings to life a collection of stories published in 'The French Dispatch.'",
+        "cover": "https://resizing.flixster.com/c3_3e7U3XwQpMTokgA183DaDUc0=/206x305/v2/https://resizing.flixster.com/t_R9s7poEUBSvXL4Nwd4-8lKwzE=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzljOWZhODZhLTBkYjItNDYxNS1hMjBkLWIwMDE0MDI1OWVlMS5qcGc=" 
     }
 ]
