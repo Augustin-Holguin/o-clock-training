@@ -1,0 +1,14 @@
+<div class="movie">
+    <img class="movie__image" src="<%= movie.cover %>" alt="movie cover">
+    <div class="movie__info">
+        <h3 class="movie__info__title"><%= movie.title %></h3>
+        <div>
+            <p class="movie__info__meta">Genre: <a href="/genre/<%= movie.genre %>"><%= movie.genre %></a></p>
+            <p class="movie__info__meta">Director: <%= movie.director %></a></p>
+            <p class="movie__info__meta">Year: <%= movie.year %></a></p>
+        </div>
+        <div class="movie__info__syn">
+            <%= movie.synopsis.split(" ").slice(0, 30).join(" ") %><span> ... <a href="">Read more</a></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "title": "No Country For Old Men",
+        "year": "2007",
+        "genre": "thriller",
+        "director": "Coen brothers",
+        "synopsis": "While out hunting, Llewelyn Moss (Josh Brolin) finds the grisly aftermath of a drug deal. Though he knows better, he cannot resist the cash left behind and takes it with him. The hunter becomes the hunted when a merciless killer named Chigurh (Javier Bardem) picks up his trail. Also looking for Moss is Sheriff Bell (Tommy Lee Jones), an aging lawman who reflects on a changing world and a dark secret of his own, as he tries to find and protect Moss.",
+        "cover": "https://resizing.flixster.com/fNxvS6Xi8aXoc-gWa1hYnitp0jE=/206x305/v2/https://flxt.tmsimg.com/NowShowing/61211/61211_aa.jpg" 
+    },
+    {
+        "id": 2,
+        "title": "Interstellar",
+        "year": "2014",
+        "genre": "sci-fi",
+        "director": "Christopher Nolan",
+        "synopsis": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.",
+        "cover": "https://resizing.flixster.com/fcEyoJOE0FHXmHlEVIbW106jyf0=/206x305/v2/https://flxt.tmsimg.com/assets/p10543523_p_v13_as.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Pulp Fiction",
+        "year": "1994",
+        "genre": "thriller",
+        "director": "Quentin Tarantino" ,
+        "synopsis": "Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions. In this ultra-hip, multi-strand crime movie, their storyline is interwoven with those of their boss, gangster Marsellus Wallace (Ving Rhames) ; his actress wife, Mia (Uma Thurman) ; struggling boxer Butch Coolidge (Bruce Willis) ; master fixer Winston Wolfe (Harvey Keitel) and a nervous pair of armed robbers, 'Pumpkin' (Tim Roth) and 'Honey Bunny' (Amanda Plummer).",
+        "cover": "https://resizing.flixster.com/Quwx8wGIpkG6qRBAVVjF1M6z_EI=/206x305/v2/https://flxt.tmsimg.com/NowShowing/41244/41244_aa.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Shutter Island",
+        "year": "2010",
+        "genre": "thriller",
+        "director": "Martin Scorsese",
+        "synopsis": "The implausible escape of a brilliant murderess brings U.S. Marshal Teddy Daniels (Leonardo DiCaprio) and his new partner (Mark Ruffalo) to Ashecliffe Hospital, a fortress-like insane asylum located on a remote, windswept island. The woman appears to have vanished from a locked room, and there are hints of terrible deeds committed within the hospital walls. As the investigation deepens, Teddy realizes he will have to confront his own dark fears if he hopes to make it off the island alive.",
+        "cover": "https://resizing.flixster.com/iIxBVx4_S8LPeT8Fjm02xddeCY0=/206x305/v2/https://flxt.tmsimg.com/assets/p3531967_p_v13_aj.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Prisoners",
+        "year": "2013",
+        "genre": "thriller",
+        "director": "Denis Villeneuve",
+        "synopsis": "Keller Dover (Hugh Jackman) faces a parent's worst nightmare when his 6-year-old daughter, Anna, and her friend go missing. The only lead is an old motorhome that had been parked on their street. The head of the investigation, Detective Loki (Jake Gyllenhaal), arrests the driver (Paul Dano), but a lack of evidence forces Loki to release his only suspect. Dover, knowing that his daughter's life is at stake, decides that he has no choice but to take matters into his own hands.",
+        "cover": "https://resizing.flixster.com/3LKAnshSvp49Z7pIArCrfdpUDQw=/206x305/v2/https://flxt.tmsimg.com/assets/p9872448_p_v10_ah.jpg" 
+    },
+    {
+        "id": 6,
+        "title": "Titane",
+        "year": "2021",
+        "genre": "thriller",
+        "director": "Julia Ducournau",
+        "synopsis": "Titane: A metal highly resistant to heat and corrosion, with high tensile strength alloys, often used in medical prostheses due to its pronounced biocompatibility.",
+        "cover": "https://resizing.flixster.com/iOTOHfaQJry73pgoDV6ZEsSgOVU=/206x305/v2/https://resizing.flixster.com/j-0yzW-fxw6EM6s0-CitTzUnEoM=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzE1MjQ1NmZmLTAyOTMtNDY5Ny04YTFiLTEwZDIzYWQ1NzMxMS5qcGc="
+    },
+    {
+        "id": 7,
+        "title": "Les misérables",
+        "year": "2019",
+        "genre": "drama",
+        "director": "Ladj Ly",
+        "synopsis": "Inspired by the 2005 riots in Paris, LES MISÉRABLES – directed by Ladj Ly – follows Stéphane (Damien Bonnard), a recent transplant to the impoverished suburb of Montfermeil, as he joins the local anti-crime squad. Working alongside his unscrupulous colleagues Chris (Alexis Manenti) and Gwada (Djebril Zonga), Stéphane struggles to maintain order amidst the mounting tensions between local gangs. When an arrest turns unexpectedly violent, the three officers must reckon with the aftermath and keep the neighborhood from spiraling out of control.",
+        "cover": "https://resizing.flixster.com/-UxehSsTlopU4uecKv1WtrWuhKs=/206x305/v2/https://resizing.flixster.com/fNvKIlmAtFJEekEriwWxR6t7ExU=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzQ0NzQ3ZWNkLTEzOWEtNDM5NS05OTk1LTkxNThkZGU5NjQxZi53ZWJw"
+    },
+    {
+        "id": 8,
+        "title": "Inception",
+        "year": "2010",
+        "genre": "action",
+        "director": "Christopher Nolan",
+        "synopsis": "Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.",
+        "cover": "https://resizing.flixster.com/4MrL62heb7yBgBt8zllSeqNZxg4=/206x305/v2/https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg"
+    },
+    {
+        "id": 9,
+        "title": "The Wailing",
+        "year": "2016",
+        "genre": "horror",
+        "director": "Na Hong-Jin",
+        "synopsis": "Suspicion leads to hysteria when rural villagers link a series of brutal murders to the arrival of a mysterious stranger (Kunimura Jun).",
+        "cover": "https://resizing.flixster.com/h8Oycxmom7u9_Qp3y8Vem9BSFD4=/206x305/v2/https://resizing.flixster.com/TgQo0LZgVkyPpo-3-e3maXJeJl4=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzIyZGZhM2FiLTQ1ZGItNDA2ZC1hZmViLWViYTdhNmViYjkzMy53ZWJw" 
+    },
+    {
+        "id": 10,
+        "title": "Une vie violente",
+        "year": "2017",
+        "genre": "thriller",
+        "director": "Thierry de Peretti",
+        "synopsis": "Even though there is a death threat against him, a man returns to Corsica for the funeral of a childhood friend.",
+        "cover": "https://resizing.flixster.com/k28QjuU2Dpqry_S7u7X8-NDukHk=/206x305/v2/https://resizing.flixster.com/YM6T-h54FgRBwfu89T9vCt-YFhY=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzQ0YzM4Yzc1LTFkYmYtNGRjYy1iZmZjLTA3YjAwYzg5MDNkZS53ZWJw" 
+    },
+    {
+        "id": 11,
+        "title": "Midnight Express",
+        "year": "1978",
+        "genre": "drama",
+        "director": "Alan Parker",
+        "synopsis": "Billy Hayes (Brad Davis) is a young American caught by Turkish police while attempting to smuggle hash out of Istanbul. He's tried and sent to prison for four years, where he endures all manner of privation and abuse. As he finishes up his time, he's shocked to learn that the Turkish High Court has added a further 30 years to his sentence. He is now thoroughly demoralized, and his life in prison grows increasingly unbearable until he concludes that escape is his only option.",
+        "cover": "https://resizing.flixster.com/Kz5ZJVK8GV3BbTHhEYKktT9oyS8=/206x305/v2/https://flxt.tmsimg.com/assets/p6108_p_v10_am.jpg" 
+    },
+    {
+        "id": 12,
+        "title": "Drunk",
+        "year": "2020",
+        "genre": "drama",
+        "director": "Thomas Vinterberg",
+        "synopsis": "Four high school teachers consume alcohol on a daily basis to see how it affects their social and professional lives.",
+        "cover": "https://resizing.flixster.com/YxsN9UCRbfrXj5XJM1R7kqmXwhs=/206x305/v2/https://resizing.flixster.com/GpVOdLjDObhFbWGMs_OD4rJPJWI=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzQ2NGJmZDQ1LWI5MjMtNDQ2ZC1iYzliLTE3YWI1ZGZmMTM4Yy5qcGc=" 
+    },
+    {
+        "id": 13,
+        "title": "50/50",
+        "year": "2011",
+        "genre": "drama",
+        "director": "Jonathan Levine",
+        "synopsis": "Adam Lerner (Joseph Gordon-Levitt) has always tried to take good care of his health, so it comes as a cruel surprise when he learns that he has malignant tumors along his spine. His doctor gives him a 50/50 chance of survival, but Adam tries to remain upbeat, though his mother (Anjelica Huston) and his friend Kyle (Seth Rogen), react badly to the news. Adam starts seeing a therapist (Anna Kendrick), but their relationship threatens to cross the boundary between doctor and patient.",
+        "cover": "https://resizing.flixster.com/inho9g2D7c2mbBGqTtjmT1_hUK4=/206x305/v2/https://flxt.tmsimg.com/assets/p8559465_p_v10_aa.jpg" 
+    }
+]

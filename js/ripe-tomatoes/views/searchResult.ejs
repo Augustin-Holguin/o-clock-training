@@ -1,0 +1,9 @@
+<%- include('./partials/sections/header') %> 
+
+<div class="movie-list">
+    <% for(movie of searchMatch) { %>
+        <%- include('./partials/view-sections/movie-classic') %> 
+    <% } %>
+</div>
+
+<%- include('./partials/sections/footer') %> 
