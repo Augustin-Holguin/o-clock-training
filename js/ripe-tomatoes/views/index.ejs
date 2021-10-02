@@ -5,16 +5,7 @@
     <button type="submit">Search</button>
 </form>
 
-<div class="movie-genre">
-    <ul class="movie-genre__list">
-        <% for (const genre of uniqueGenre) { %>
-            <li class="list__genre"><a href="/genre/<%= genre %>"><%= genre %><a></li>
-            <% if (uniqueGenre.indexOf(genre) < (uniqueGenre.length - 1)) { %>
-                <span class="genre-separator"></span>
-            <% } %>
-        <% } %>
-    </ul>
-</div>
+<%- include('./partials/view-sections/genre-nav.ejs') %>
 
 <main class="main-home">
     <section class="main-home__new">
