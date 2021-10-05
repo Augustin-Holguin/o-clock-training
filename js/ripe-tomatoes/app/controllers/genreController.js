@@ -1,5 +1,4 @@
 const movies = require('../../data/movies.json');
-const controller = require('./controller.js');
 
 const genreController = {
     // method to display various genres in navbar

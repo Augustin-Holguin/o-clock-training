@@ -1,8 +1,9 @@
-const controller = {
+const movies = require('../../data/movies.json');
+
+const searchController = {
     // method to handle movie search
     searchMovies: (req, res) => {
         const searchQuery = req.query.q;
-        const movies = req.app.locals.movies;
 
         const searchMatch = movies.filter((movie) => {
             if (movie.title.toLowerCase().includes(searchQuery.toLowerCase())) {
@@ -10,8 +11,8 @@ const controller = {
             }   
         });
 
-        return searchMatch;
+        res.render('searchResult', { searchMatch, searchQuery });
     }
 }
 
-module.exports = controller;
+module.exports = searchController;
