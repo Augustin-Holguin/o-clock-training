@@ -20,7 +20,7 @@
                 <% for (const movie of movies) { %>
                     <% if (!movie.released) { %>
                         <div class="cine-soon__movie">
-                            <a href=""><img class="cine-soon__movie__img" src="<%= movie.cover %>"></a>
+                            <a href="/movies/<%= movie.title %>"><img class="cine-soon__movie__img" src="<%= movie.cover %>"></a>
                         </div>
                     <% } %>
                 <% } %>
@@ -28,5 +28,13 @@
         </div>
     </section>
 </main>
+
+<script type="text/javascript">
+    const carouselButtons = document.getElementsByClassName('car').item(0);
+
+    carouselButtons.style.background = 'red';
+
+
+</script>
 
 <%- include('./partials/sections/footer') %> 

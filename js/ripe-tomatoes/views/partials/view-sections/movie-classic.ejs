@@ -8,7 +8,7 @@
             <p class="movie__info__meta">Year: <%= movie.year %></a></p>
         </div>
         <div class="movie__info__syn">
-            <%= movie.synopsis.split(" ").slice(0, 30).join(" ") %><span> ... <a href="" class="a-link">Read more</a></span>
+            <%= movie.synopsis.split(" ").slice(0, 30).join(" ") %><span> ... <a href="/movies/<%= movie.title %>" class="a-link">Read more</a></span>
         </div>
     </div>
 </div>

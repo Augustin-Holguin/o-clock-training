@@ -1,13 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('./app/controller.js');
+const controller = require('./app/controllers/controller.js');
+const mainController = require('./app/controllers/mainController.js');
 
-router.get('/', (req, res) => {
-    const movies = req.app.locals.movies;
-    const uniqueGenre = controller.variousGenre(req, res);
-   
-    res.render('index', { movies, uniqueGenre });
-});
+router.get('/', mainController.homePage);
 
 router.get('/search', (req, res, next) => {
     const searchQuery = req.query.q;
@@ -24,6 +20,10 @@ router.get('/genre/:genre', (req, res) => {
     const sameGenreMovies = controller.sameGenre(req, res);
 
     res.render('genre', { sameGenreMovies, genre, uniqueGenre });
+})
+
+router.get('/movies/:movie', (req, res) => {
+    res.render('movie');
 })
 
 module.exports = router;
