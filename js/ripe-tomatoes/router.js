@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const controller = require('./app/controllers/controller.js');
+const genreController = require('./app/controllers/genreController.js');
 const mainController = require('./app/controllers/mainController.js');
 
 router.get('/', mainController.homePage);
@@ -13,14 +14,7 @@ router.get('/search', (req, res, next) => {
     res.render('searchResult', { searchMatch, searchQuery });
 })
 
-router.get('/genre/:genre', (req, res) => {
-    const genre = req.params.genre;
-    const movies = req.app.locals.movies;
-    const uniqueGenre = controller.variousGenre(req, res);
-    const sameGenreMovies = controller.sameGenre(req, res);
-
-    res.render('genre', { sameGenreMovies, genre, uniqueGenre });
-})
+router.get('/genre/:genre', genreController.genrePage);
 
 router.get('/movies/:movie', (req, res) => {
     res.render('movie');
