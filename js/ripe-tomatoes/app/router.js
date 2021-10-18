@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const genreController = require('./app/controllers/genreController.js');
-const mainController = require('./app/controllers/mainController.js');
-const searchController = require('./app/controllers/searchController.js');
-const movieController = require('./app/controllers/movieController.js');
+const genreController = require('./controllers/genreController.js');
+const mainController = require('./controllers/mainController.js');
+const searchController = require('./controllers/searchController.js');
+const movieController = require('./controllers/movieController.js');
 
 router.get('/', mainController.homePage);
 

@@ -188,5 +188,25 @@
         "director": "Wes Anderson",
         "synopsis": "A love letter to journalists set in an outpost of an American newspaper in a fictional 20th-century French city that brings to life a collection of stories published in 'The French Dispatch.'",
         "cover": "https://resizing.flixster.com/c3_3e7U3XwQpMTokgA183DaDUc0=/206x305/v2/https://resizing.flixster.com/t_R9s7poEUBSvXL4Nwd4-8lKwzE=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzljOWZhODZhLTBkYjItNDYxNS1hMjBkLWIwMDE0MDI1OWVlMS5qcGc=" 
+    },
+    {
+        "id": 19,
+        "title": "Parasite",
+        "released": true,
+        "year": "2019",
+        "genre": "drama",
+        "director": "Bong Joon-ho",
+        "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+        "cover": "https://resizing.flixster.com/enYPx96luLq0FWTdEpiWqX6rxMk=/206x305/v2/https://resizing.flixster.com/OCnoNZ2b2Z_Bpa0RX35IwYN1lLQ=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzZlZWEwMmY4LTk1OWUtNGEyOS04ODRmLTA0OWRjMzhlYWZkNi53ZWJw" 
+    },
+    {
+        "id": 20,
+        "title": "Mad Max: Fury Road",
+        "released": true,
+        "year": "2015",
+        "genre": "action",
+        "director": "George Miller",
+        "synopsis": "Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive. Fortified in the massive, armored truck the War Rig, they try to outrun the ruthless warlord and his henchmen in a deadly high-speed chase through the Wasteland.",
+        "cover": "https://resizing.flixster.com/QjeBkzpqqCHcl9sk0kz_1a1Hu-M=/206x305/v2/https://flxt.tmsimg.com/NowShowing/140378/140378_ab.jpg" 
     }
 ]

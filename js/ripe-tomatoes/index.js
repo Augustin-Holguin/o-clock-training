@@ -4,10 +4,10 @@ const express = require('express');
 const ejs = require('ejs');
 const dayjs = require('dayjs');
 const app = express();
-const router = require('./router.js');
+const router = require('./app/router.js');
 
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/app/views');
 
 app.use(express.static(__dirname + '/public'));
 
