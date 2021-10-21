@@ -1,6 +1,9 @@
 <%- include('./partials/sections/header') %> 
 
-<h3 class="search-title">Result for "<%= searchQuery %>"</h3>
+<h3 class="search-title">Results for "<%= searchQuery %>"</h3>
+<!-- if no results we display the error message -->
+<% if (err) %> 
+    <p><%= err %> </p>
 
 <div class="movie-list">
     <% for(movie of searchMatch) { %>

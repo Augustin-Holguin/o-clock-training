@@ -1,6 +1,7 @@
 const client = require('./database');
 
 const dataMapper = {
+    // MOVIE table queries
     // db query to return all movies
     getAllMovies: (callback) => {
         const dbQuery = `SELECT * FROM movie`;
@@ -18,6 +19,7 @@ const dataMapper = {
             }
         });
     },
+    // GENRE table queries
     // db query to return various genre from table genre
     getAllGenre: (callback) => {
         const dbQuery = `SELECT DISTINCT genre_name FROM genre ORDER BY genre_name ASC`;
@@ -43,9 +45,8 @@ const dataMapper = {
 
         // query db by passing genreName as a param
         client.query(dbQuery, [genreName], (err, results) => {
-            console.log(results.rows);
             if (results.rows.length === 0)
-            err = 'No movies found for this genre';
+                err = 'No movies found for this genre';
         
             let rows = undefined;
 
@@ -55,7 +56,29 @@ const dataMapper = {
                 callback(err, rows);
             }
         });
-    }
+    },
+    // SEARCH queries
+    getMoviesByTitle: (searchQuery, callback) => {
+        // encapsulating searchQuery with % so we can query with ILIKE and parameter $1
+        const searchQueryIlike = `%${searchQuery}%`;
+
+        const dbQuery = `SELECT * FROM movie m
+        JOIN director d on m.director_id = d.id
+        JOIN genre g on m.genre1_id = g.id
+        WHERE m.title ILIKE $1`;
+
+        client.query(dbQuery, [searchQueryIlike], (err, results) => {
+            if (results.rows.length === 0)
+                err = `No movies found for ${searchQuery}`;
+        
+            let rows = undefined;
+
+            if (results && results.rows) {
+                rows = results.rows;
+                callback(err, rows);
+            }
+        });
+    } 
 }
 
 module.exports = dataMapper;
