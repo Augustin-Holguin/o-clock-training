@@ -18,6 +18,7 @@ a {
 
 /* HEADER */
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +36,14 @@ a {
 .header a img {
     height: 3em;
     margin-top: 2px;
+}
+
+.header_admin {
+    position: absolute;
+    right: 1.5em;
+    background: gold;
+    padding: 0.5em 0.6em;
+    border-radius: 0.5em;
 }
 
 /* Main search */
@@ -229,4 +238,26 @@ a {
     line-height: 1.3em;
     font-size: 0.95em;
     color: rgb(105, 105, 105);
+}
+
+/* ADMIN page */
+/* add a movie form */
+.add_movie {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_movie__title {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0.5em 0 0.5em 0.35em;
+    color: #464646;
+    text-align: center;
+}
+
+.form-add_movie {
+    display: flex;
+    flex-flow: wrap column;
 }

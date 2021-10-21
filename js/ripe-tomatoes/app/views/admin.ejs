@@ -1,0 +1,41 @@
+<%- include('./partials/sections/header') %> 
+
+<section class="add_movie">
+    <h2 class="add_movie__title">Add a movie to your collection</h2>
+    
+    <form class="form-add_movie" action="/admin/add-movie" method="POST">
+        <label for="movie-title">Movie title</label>
+        <input name="title" type="text" id="movie-title" required="true">
+
+        <label for="movie-director">Director</label>
+        <input name="director" type="text" id="movie-director" required="true">
+
+        <label for="movie-genre">Genre</label>
+        <select id="movie-genre" name="genre" >
+            <% for (const genre of distinctGenre) { %>
+                <option value=<%= genre.id %>><%= genre.genre_name %></option>
+            <% } %>
+        </select>
+
+        <label for="release-year">Release year</label>
+        <input name="year" type="number" id="release-year" required="true">
+
+        <label for="movie-synopsis">Synopsis</label>
+        <textarea name="synopsis" id="movie-synopsis" required="true"></textarea>
+
+        <label for="movie-cover">Cover</label>
+        <input name="cover" type="url" id="movie-cover" pattern="https://.*" required="true">
+
+        <div>
+            <p>Released ?</p>
+            <label for="true">Yes</label>
+            <input name="released" type="radio" id="true" value="true" checked="checked">
+            <label for="false">No</label>
+            <input name="released" type="radio" id="false" value="false">
+        </div>
+
+        <button>Add movie</button>
+    </form>
+</section>
+
+<%- include('./partials/sections/footer') %> 

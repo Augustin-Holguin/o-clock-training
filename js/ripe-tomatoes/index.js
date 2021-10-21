@@ -11,7 +11,10 @@ app.set('views', __dirname + '/app/views');
 
 app.use(express.static(__dirname + '/public'));
 
-app.locals.movies = require('./data/movies.json');
+// urlencoded needed in order to have access to request body
+app.use(express.urlencoded({
+    extended: true
+}));
 
 // app.use((req, res, next) => {
 //     console.log(`URL request -> ' ${req.path} '`);
