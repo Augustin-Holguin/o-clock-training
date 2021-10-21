@@ -2,6 +2,9 @@ DROP TABLE IF EXISTS "movie";
 DROP TABLE IF EXISTS "director";
 DROP TABLE IF EXISTS "genre";
 
+-- add timestamp to movie table
+-- ALTER TABLE movie ADD COLUMN date_added timestamp with time zone DEFAULT now();
+
 -- create table movie
 CREATE TABLE IF NOT EXISTS movie (
     id SERIAL PRIMARY KEY,
@@ -10,9 +13,11 @@ CREATE TABLE IF NOT EXISTS movie (
     genre1_id INT REFERENCES "genre"("id"),
     genre2_id INT REFERENCES "genre"("id"),
     genre3_id INT REFERENCES "genre"("id"),
-    year INT NOT NULL,
+    released BOOLEAN DEFAULT TRUE,
+    release_year INT NOT NULL,
     synopsis TEXT NOT NULL,
     cover TEXT NOT NULL
+    date_added timestamp with time zone DEFAULT now()
 );
 
 -- create table director
