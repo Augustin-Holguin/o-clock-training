@@ -3,8 +3,13 @@
 <%- include('./partials/view-sections/genre-nav.ejs') %>
 
 <div class="movie-list">
-    <h2 class="movie-list__genre"><%= genre.charAt(0).toUpperCase() + genre.slice(1) %> movies</h2>
+    <h2 class="movie-list__genre"><%= genreName.charAt(0).toUpperCase() + genreName.slice(1) %> movies</h2>
 
+    <!-- if no movies found for this genre display error message -->
+    <% if (err) %>
+        <p><%= err %></p>
+
+    <!-- else loop through all the movies in sameGenreMovies and display them -->
     <% for(movie of sameGenreMovies) { %>
         <%- include('./partials/view-sections/movie-classic') %> 
     <% } %>

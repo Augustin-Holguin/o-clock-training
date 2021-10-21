@@ -1,8 +1,9 @@
 <div class="movie-genre">
     <ul class="movie-genre__list">
-        <% for (const genre of uniqueGenre) { %>
-            <li class="list__genre"><a href="/genre/<%= genre %>"><%= genre %><a></li>
-            <% if (uniqueGenre.indexOf(genre) < (uniqueGenre.length - 1)) { %>
+        <% for (const genre of distinctGenre) { %>
+            <li class="list__genre"><a href="/genre/<%= genre.genre_name %>"><%= genre.genre_name %><a></li>
+            <!-- add a vertical separator between each genre up to the penultimate one -->
+            <% if (distinctGenre.indexOf(genre) < (distinctGenre.length - 1)) { %>
                 <span class="genre-separator"></span>
             <% } %>
         <% } %>
