@@ -1,10 +1,10 @@
 require('dotenv').config();
-
 const express = require('express');
 const ejs = require('ejs');
 const dayjs = require('dayjs');
-const app = express();
 const router = require('./app/router.js');
+
+const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/app/views');
