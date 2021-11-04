@@ -25,7 +25,7 @@ Movie.belongsToMany(Genre, {
 });
 
 // Genre can have many movies
-Genre.belongsToMany(Move, {
+Genre.belongsToMany(Movie, {
     foreignKey: 'genre_id',
     otherKey: 'movie_id',
     through: 'movie_has_genre',

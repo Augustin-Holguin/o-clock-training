@@ -1,5 +1,7 @@
 <%- include('./partials/sections/header') %> 
 
-<p>404</p>
+<% if (locals.error) { %> 
+    <p><%= error %></p>
+<% } %> 
 
 <%- include('./partials/sections/footer') %> 

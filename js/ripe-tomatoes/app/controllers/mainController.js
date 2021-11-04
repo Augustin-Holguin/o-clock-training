@@ -1,31 +1,21 @@
-// const genreController = require('./genreController.js');
-const dataMapper = require('../dataMapper');
+const { Movie, Genre } = require('../models');
 
 const mainController = {
-    homePage: (req, res) => {
-        let distinctGenre = undefined;
+    homePage: async function(req, res) {
+        try {
+            // fetching all movies and genres before rendering homepage
+            const movies = await Movie.findAll();
+            const distinctGenre = await Genre.findAll();
 
-        dataMapper.getAllGenre((err, results) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send(err);
-            } else {
-                distinctGenre = results;
-            }
-        });
-        
-        // calling datamapper to get all movies and render it to the main view index
-        dataMapper.getAllMovies((err, results) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send(err);
-            } else {
-                res.render('index', {
-                    movies: results,
-                    distinctGenre
-                })
-            }
-        });
+            res.render('index', { 
+                movies,
+                distinctGenre 
+            });
+        } catch (error) {
+            res.render('404', { 
+                error: error.message
+            });
+        }
     }
 }
 
