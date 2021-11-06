@@ -1,39 +1,46 @@
-const dataMapper = require('../dataMapper');
+const { Movie, Genre } = require('../models');
 
 const genreController = {
     // method to handle rendering of genre view
-    genrePage: (req, res) => {
-        // first let's get all distinct genres for the genre navbar
-        let distinctGenre = undefined;
-
-        dataMapper.getAllGenre((error, allGenre) => {
-            if (error) {
-                console.log(error);
-                res.status(500).send(error);
-            } else {
-                distinctGenre = allGenre;
-            }
-        });
-        // second let's query the db to find all movies which have the same genre
+    genrePage: async function(req, res) {
         const genreName = req.params.genre;
+        
+        try {
+            const distinctGenre = await Genre.findAll();
+            const sameGenreMovies = await Genre.findAll({
+                // include association movie_has_genre
+                include: [
+                    {
+                        association: 'movies',
+                        // include director data
+                        include: [
+                            'director',
+                            'genres'
+                        ]
+                    }
+                ],
+                where: {
+                    genre_name: genreName
+                }                
+            });
+            let err = undefined;
+            console.log(sameGenreMovies.length)
 
-        dataMapper.getAllMoviesByGenre(genreName, (err, results) => {
-            if (err) {
-                console.log(err);
-                return res.render('genre', {
-                    err,
-                    distinctGenre,
-                    genreName,
-                    sameGenreMovies: results
-                });
-            } 
+            if (sameGenreMovies.length < 1) {
+                err = true;
+            } else {
+                err = undefined;
+            }
+
             res.render('genre', {
                 err,
                 distinctGenre,
                 genreName,
-                sameGenreMovies: results
-            });  
-        });
+                sameGenreMovies
+            });
+        } catch (error) {
+            res.send(error);
+        }
     }
 }
 
