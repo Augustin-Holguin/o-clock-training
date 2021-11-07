@@ -24,9 +24,8 @@ const genreController = {
                 }                
             });
             let err = undefined;
-            console.log(sameGenreMovies.length)
 
-            if (sameGenreMovies.length < 1) {
+            if (sameGenreMovies[0].movies.length < 1) {
                 err = true;
             } else {
                 err = undefined;
