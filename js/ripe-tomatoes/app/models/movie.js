@@ -12,16 +12,6 @@ Movie.init({
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    genre1_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    genre2_id: {
-        type: DataTypes.INTEGER
-    },
-    genre3_id: {
-        type: DataTypes.INTEGER
-    },
     year: {
         type: DataTypes.INTEGER,
         allowNull: false
@@ -32,6 +22,10 @@ Movie.init({
     },
     cover: {
         type: DataTypes.TEXT,
+        allowNull: false
+    },
+    released: {
+        type: DataTypes.BOOLEAN,
         allowNull: false
     }
 }, {
