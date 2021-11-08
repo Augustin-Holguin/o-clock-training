@@ -2,8 +2,9 @@
 
 <h3 class="search-title">Results for "<%= searchQuery %>"</h3>
 <!-- if no results we display the error message -->
-<% if (err) %> 
-    <p><%= err %> </p>
+<% if (err !== undefined) { %> 
+    <p>No movies found</p>
+<% } %> 
 
 <div class="movie-list">
     <% for(movie of searchMatch) { %>

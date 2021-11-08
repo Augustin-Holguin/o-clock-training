@@ -12,7 +12,7 @@ const genreController = {
                 include: [
                     {
                         association: 'movies',
-                        // include director data
+                        // include director data + genre_name
                         include: [
                             'director',
                             'genres'
@@ -24,7 +24,7 @@ const genreController = {
                 }                
             });
             let err = undefined;
-
+            // if no movies found for genre
             if (sameGenreMovies[0].movies.length < 1) {
                 err = true;
             } else {
