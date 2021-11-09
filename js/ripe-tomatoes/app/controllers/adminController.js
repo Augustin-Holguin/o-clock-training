@@ -1,7 +1,6 @@
 const sequelize = require('../database');
-const { Op, QueryTypes } = require("sequelize");
+const { Op } = require("sequelize");
 const { Genre, Director, Movie } = require('../models');
-// const dataMapper = require('../dataMapper');
 
 const adminController = {
     adminPage: async function(req, res) {
