@@ -6,48 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css//main.css">
-    <!-- <script src="./js/main.js" async></script> -->
     <title>Carousel</title>
 </head>
 <body>
-    <div class="container">
-        <div class="carousel">
-            <div class="item">
-                <div class="item__image">
-                    <img src="./img/img1.jpg" alt="">
-                </div>
-                <div class="item__body"></div>
-                <div class="item__description"></div>
-            </div>
-            <div class="item">
-                <div class="item__image">
-                    <img src="./img/img2.jpg" alt="">
-                </div>
-                <div class="item__body"></div>
-                <div class="item__description"></div>
-            </div>
-            <div class="item">
-                <div class="item__image">
-                    <img src="./img/img3.jpg" alt="">
-                </div>
-                <div class="item__body"></div>
-                <div class="item__description"></div>
-            </div>
-            <div class="item">
-                <div class="item__image">
-                    <img src="./img/img4.jpg" alt="">
-                </div>
-                <div class="item__body"></div>
-                <div class="item__description"></div>
-            </div>
-            <div class="item">
-                <div class="item__image">
-                    <img src="./img/img5.jpg" alt="">
-                </div>
-                <div class="item__body"></div>
-                <div class="item__description"></div>
-            </div>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">&#139</button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__img" src="./img/img1.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__img" src="./img/img2.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__img" src="./img/img3.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__img" src="./img/img4.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__img" src="./img/img5.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">&#155</button>
+
+        <div class="carousel__nav">
+            <button class="carousel__indicator carousel__indicator--current"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
         </div>
     </div>
+    <script src="./js/carousel.js" async></script>
 </body>
 </html>
