@@ -1,5 +1,5 @@
-<div class="movie-genre">
-    <ul class="movie-genre__list">
+<div id="movie-genre">
+    <ul id="movie-genre__list">
         <% for (const genre of distinctGenre) { %>
             <li class="list__genre"><a href="/genre/<%= genre.genre_name %>"><%= genre.genre_name %><a></li>
             <!-- add a vertical separator between each genre up to the penultimate one -->

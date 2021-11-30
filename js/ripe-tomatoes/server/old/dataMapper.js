@@ -1,4 +1,6 @@
-const client = require('./database');
+// MODULE NOT USED ANYMORE
+
+const client = require('../database');
 
 const dataMapper = {
     // MOVIE table queries

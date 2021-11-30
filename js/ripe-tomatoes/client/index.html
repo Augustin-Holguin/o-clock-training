@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/reset.css">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">    
+        <header class="header">
+            <a href="/"><img src="https://maxcdn.icons8.com/Share/icon/Plants/tomato1600.png" alt="logo"></a>
+            <a href="/"><h1>Ripe tomatoes</h1></a>
+            <div class="header_admin">
+                <a href="/admin">
+                    <p>Admin</p>
+                </a>
+            </div>
+        </header>
+
+        <form class="search" method="GET" action="/search">
+            <input id="search" type="text" name="q" placeholder="Search by movie title">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="movie-genre">
+            <ul id="movie-genre__list"></ul>
+        </div>
+        
+    <script src="./src/app.js"></script>
+    <script src="./src/genreModule.js"></script>
+</body>
+</html>

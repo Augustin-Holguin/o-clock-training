@@ -1,7 +1,16 @@
 const { Movie, Genre } = require('../models');
+const { catchError } = require('../utils');
 
 const genreController = {
     // method to handle rendering of genre view
+    getAllGenres: async function(req, res) {
+        try {
+            const genres = await Genre.findAll();
+            res.json(genres);
+        } catch (error) {
+            catchError(error, res)
+        }
+    },
     genrePage: async function(req, res) {
         const genreName = req.params.genre;
         
