@@ -32,5 +32,8 @@ const genreModule = {
                 genreList.appendChild(span);
             }
         }
+    },
+    makeGenrePage: function() {
+        
     }
 }
