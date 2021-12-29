@@ -1,5 +1,5 @@
 const SearchResults = () => (
-    <p>tada</p>
+    <p>Here are your search results</p>
 )
 
 export default SearchResults;

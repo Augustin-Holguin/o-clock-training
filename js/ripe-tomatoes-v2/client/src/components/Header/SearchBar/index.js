@@ -1,24 +1,21 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { updateSearchInput } from 'src/actions';
 import './style.scss';
 
-const SearchBar = ({ inputText, onSearch, onInputChange }) => {
-    function handleFormSubmit(e) {
-        e.preventDefault();
-        console.log(e.target.value)
-        onSearch();
-    }
+const SearchBar = () => {
+    const searchInput = useSelector((state) => state.searchInput);
+
+    const dispatch = useDispatch();
 
     return (
-        <form className="search" method="GET" action="/search" onSubmit={handleFormSubmit}>
+        <form className="search" method="GET" action="/search">
             <div className="search-input ui icon input">
                 <input 
                     type="text"
                     placeholder="Search by movie title" 
                     name="q" 
-                    value={inputText} 
-                    onChange={(evt) => {
-                        const text = evt.target.value;
-                        onInputChange(text);
-                    }} 
+                    value={searchInput}
+                    onChange={(e) => dispatch(updateSearchInput(e.target.value))}
                 />
                 <i className="search icon"></i>
             </div>

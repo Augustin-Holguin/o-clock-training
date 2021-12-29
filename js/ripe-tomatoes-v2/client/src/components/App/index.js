@@ -4,6 +4,7 @@ import { useState } from 'react';
 // Components
 import Header from '../Header';
 import SearchResults from '../SearchResults';
+import Admin from 'src/components/Admin';
 
 // data, styles and utils
 import './styles.scss';
@@ -18,6 +19,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<h1>Test</h1>} />
             <Route path="/search" element={<SearchResults />} />
+            <Route path="/admin" element={<Admin />} />
         </Routes>
     </div>
   )
